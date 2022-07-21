@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/********* Défini la structure globale ********/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+body {
+  font-family: "Roboto", serif;
+}
+
+h1 {
+  font-family: "Shrikhand", serif;
+}
+
+h2 {
+  font-family: "Roboto", serif;
+}
+
+/*# sourceMappingURL=style.css.map */
