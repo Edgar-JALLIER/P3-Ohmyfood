@@ -1,0 +1,58 @@
+/*** Header de la page d'accueil ***/
+
+.header {
+
+    &_logo {
+        height: 27px;
+        display: flex;
+        justify-content: center;
+        margin: 20px auto 20px auto;  
+    
+    }
+    &_location {
+        background-color: #EAEAEA;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        box-shadow: 0px -3px 3px #c1c0c0;
+
+    }
+    &_reservation {
+        background-color: #F6F6F6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            margin: 30px 50px 15px 50px;
+            text-align: center;
+            font-weight: 900;
+        }
+
+        p {
+            text-align: center;
+            color: #4D4D4D;
+            margin: 0px 15px 30px 15px;
+            font-size: 17px;
+            font-weight: 300;
+        }
+        button {
+            font-family: 'Roboto';
+            font-size: 15px;
+            font-weight: 550;
+            color: #FFFFFF;
+            background: linear-gradient(350deg,  $primaire, $secondaire);
+            padding: 15px 0px 15px 0px;
+            margin-bottom: 50px;
+            width: 210px;
+            border-radius: 100px;
+            border: none;
+        }
+    }
+    
+}
+
+.fa-location-dot {
+    padding-right: 15px;
+}

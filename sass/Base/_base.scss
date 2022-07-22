@@ -1,16 +1,17 @@
 /********* Défini la structure globale ********/
-$violet: #9356DC;
-$rose: #FF79DA;
-$cyan: #99E2D0;
+$primaire: #9356DC;
+$secondaire: #FF79DA;
+$tertiaire: #99E2D0;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
 
 body {
+    margin: 0px;
     font-family: 'Roboto', serif;
 }
 
 h1 {
-    font-family: 'Shrikhand', serif;
+    font-size: 24px;
 }
 
 h2 {

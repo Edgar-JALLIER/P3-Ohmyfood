@@ -2,15 +2,66 @@
 /********* Défini la structure globale ********/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 body {
+  margin: 0px;
   font-family: "Roboto", serif;
 }
 
 h1 {
-  font-family: "Shrikhand", serif;
+  font-size: 24px;
 }
 
 h2 {
   font-family: "Roboto", serif;
+}
+
+/*** Header de la page d'accueil ***/
+.header_logo {
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 20px auto;
+}
+.header_location {
+  background-color: #EAEAEA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0px -3px 3px #c1c0c0;
+}
+.header_reservation {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header_reservation h1 {
+  margin: 30px 50px 15px 50px;
+  text-align: center;
+  font-weight: 900;
+}
+.header_reservation p {
+  text-align: center;
+  color: #4D4D4D;
+  margin: 0px 15px 30px 15px;
+  font-size: 17px;
+  font-weight: 300;
+}
+.header_reservation button {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 550;
+  color: #FFFFFF;
+  background: linear-gradient(350deg, #9356DC, #FF79DA);
+  padding: 15px 0px 15px 0px;
+  margin-bottom: 50px;
+  width: 210px;
+  border-radius: 100px;
+  border: none;
+}
+
+.fa-location-dot {
+  padding-right: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
