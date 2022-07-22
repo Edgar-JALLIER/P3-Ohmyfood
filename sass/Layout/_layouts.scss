@@ -23,11 +23,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 50px;
 
         h1 {
             margin: 30px 50px 15px 50px;
             text-align: center;
-            font-weight: 900;
         }
 
         p {
@@ -40,14 +40,18 @@
         button {
             font-family: 'Roboto';
             font-size: 15px;
-            font-weight: 550;
             color: #FFFFFF;
+            font-weight: 550;
             background: linear-gradient(350deg,  $primaire, $secondaire);
             padding: 15px 0px 15px 0px;
-            margin-bottom: 50px;
             width: 210px;
             border-radius: 100px;
             border: none;
+            box-shadow: 0px 4px 6px 1px #c1c0c0;
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
         }
     }
     
@@ -55,4 +59,63 @@
 
 .fa-location-dot {
     padding-right: 15px;
+}
+
+/********** Espace "fonctionnement" sur la page d'accueil ********/
+
+.functioning {
+    margin: 30px 15px 40px 15px;
+    display: flex;
+    flex-direction: column;
+    &_number {
+        position: relative;
+        left: -13px;
+        color: #FFFFFF;
+        font-weight: lighter;
+        font-size: 14px;
+        background-color: $primaire;
+        border-radius: 20px;
+        padding: 4px 9px 4px 9px;
+    }
+    &_step {
+        margin: 15px 0px 15px 15px;
+        display: flex;
+        align-items: center;
+        background-color: #F6F6F6;
+        font-weight: bold;
+        box-shadow: 0px 4px 18px 0px #c1c0c0;
+        border-radius: 20px;
+        padding: 10px 0px 10px 0px;
+    }
+    &_step:hover {
+        background-color: #F5EDFF;
+    }
+    &_step:hover .fa-mobile-screen {
+        color: $primaire;
+    }
+    &_step:hover .fa-store{
+        color: $primaire;
+    }
+    &_step:hover .fa-list-ul{
+        color: $primaire;
+    }
+
+}
+
+.fa-mobile-screen {
+    padding: 0px 25px 0px 10px;
+    font-size: 20px;
+    color: #7E7E7E;
+}
+
+.fa-list-ul {
+    padding: 0px 25px 0px 10px;
+    font-size: 20px;
+    color: #7E7E7E;
+}
+
+.fa-store {
+    padding: 0px 25px 0px 10px;
+    font-size: 18px;
+    color: #7E7E7E;
 }
