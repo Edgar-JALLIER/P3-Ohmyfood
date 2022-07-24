@@ -5,7 +5,7 @@ $tertiaire: #99E2D0;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
 
-$breakpoints : (tablette: 800px, desktop: 950px);
+$breakpoints : (tablette: 600px, desktop: 980px);
 
 @mixin tablette {
     @media screen and (min-width: map-get($breakpoints, tablette)) { 

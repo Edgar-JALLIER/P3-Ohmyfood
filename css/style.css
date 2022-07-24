@@ -72,15 +72,21 @@ h2 {
 #titreFonctionnement {
   margin: 45px 10px 0px 20px;
 }
+@media screen and (min-width: 980px) {
+  #titreFonctionnement {
+    text-align: center;
+  }
+}
 
 .functioning {
   margin: 15px 15px 40px 15px;
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 980px) {
   .functioning {
     flex-direction: row;
+    justify-content: center;
   }
 }
 .functioning_number {
@@ -105,7 +111,7 @@ h2 {
   border-radius: 20px;
   padding: 10px 5px 10px 0px;
 }
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 980px) {
   .functioning_step {
     margin: 20px;
   }
@@ -139,6 +145,130 @@ h2 {
   padding: 0px 25px 0px 10px;
   font-size: 18px;
   color: #7E7E7E;
+}
+
+/**** Espace Restaurants ****/
+#sectionRestaurants {
+  background-color: #F6F6F6;
+}
+
+#titreRestaurants {
+  padding: 45px 10px 0px 20px;
+  margin-top: 0px;
+}
+@media screen and (min-width: 980px) {
+  #titreRestaurants {
+    text-align: center;
+  }
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 980px) {
+  .restaurants {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.restaurants a {
+  text-decoration: none;
+  color: black;
+  box-shadow: 0px 4px 18px 0px #c1c0c0;
+  width: 90%;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+@media screen and (min-width: 980px) {
+  .restaurants a {
+    width: 680px;
+    margin: 20px;
+  }
+}
+.restaurants_card {
+  margin: 0px auto 0px auto;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  position: relative;
+}
+.restaurants_new {
+  background-color: #99e2d0;
+  color: #008766;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 2px;
+  padding: 6px 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.restaurants_img {
+  object-fit: cover;
+  height: 150px;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants_description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurants_description--name {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+.restaurants_description--name h3 {
+  margin: 10px 0px 5px 0px;
+  font-size: 16px;
+}
+.restaurants_description--name p {
+  margin: 0px 0px 10px 0px;
+  font-size: 15px;
+}
+.restaurants_description--heart {
+  display: flex;
+  font-size: 25px;
+  padding-right: 25px;
+}
+
+/** Footer **/
+footer {
+  background-color: #353535;
+}
+footer h3 {
+  color: #FFFFFF;
+  font-family: "Shrikhand", serif;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 20px 10px 15px 25px;
+  margin: 0;
+}
+@media screen and (min-width: 600px) {
+  footer h3 {
+    text-align: center;
+  }
+}
+footer ul {
+  list-style-type: none;
+  padding: 0 0 25px 25px;
+  margin: 0;
+}
+@media screen and (min-width: 600px) {
+  footer ul {
+    text-align: center;
+  }
+}
+footer a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+footer li {
+  padding: 4.5px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
