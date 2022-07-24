@@ -5,6 +5,20 @@ $tertiaire: #99E2D0;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
 
+$breakpoints : (tablette: 800px, desktop: 950px);
+
+@mixin tablette {
+    @media screen and (min-width: map-get($breakpoints, tablette)) { 
+        @content;
+    }  
+}
+
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)) { 
+        @content;
+    }  
+}
+
 body {
     margin: 0px;
     font-family: 'Roboto', serif;

@@ -69,10 +69,19 @@ h2 {
 }
 
 /********** Espace "fonctionnement" sur la page d'accueil ********/
+#titreFonctionnement {
+  margin: 45px 10px 0px 20px;
+}
+
 .functioning {
-  margin: 30px 15px 40px 15px;
+  margin: 15px 15px 40px 15px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 950px) {
+  .functioning {
+    flex-direction: row;
+  }
 }
 .functioning_number {
   position: relative;
@@ -85,14 +94,21 @@ h2 {
   padding: 4px 9px 4px 9px;
 }
 .functioning_step {
-  margin: 15px 0px 15px 15px;
+  margin: 15px auto 15px auto;
+  width: 90%;
+  max-width: 500px;
   display: flex;
   align-items: center;
   background-color: #F6F6F6;
   font-weight: bold;
   box-shadow: 0px 4px 18px 0px #c1c0c0;
   border-radius: 20px;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 5px 10px 0px;
+}
+@media screen and (min-width: 950px) {
+  .functioning_step {
+    margin: 20px;
+  }
 }
 .functioning_step:hover {
   background-color: #F5EDFF;
