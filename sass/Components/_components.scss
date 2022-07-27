@@ -1,0 +1,18 @@
+.main_button {
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: 550;
+    background: linear-gradient(345deg,  $primaire, $secondaire);
+    padding: 15px 0px 15px 0px;
+    width: 210px;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0px 4px 6px 1px #c1c0c0;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+        background: linear-gradient(345deg, lighten($primaire, 3%), lighten($secondaire, 3%));
+        box-shadow: 3px 8px 8px 2px #c1c0c0;
+    }
+}
