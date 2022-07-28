@@ -15,13 +15,13 @@ h2 {
 }
 
 /*** Header de la page d'accueil ***/
-.header_logo {
+.header_accueil_logo {
   height: 27px;
   display: flex;
   justify-content: center;
   margin: 20px auto 20px auto;
 }
-.header_location {
+.header_accueil_location {
   background-color: #EAEAEA;
   display: flex;
   align-items: center;
@@ -29,30 +29,55 @@ h2 {
   font-weight: bold;
   box-shadow: 0px -3px 3px #c1c0c0;
 }
-.header_reservation {
+.header_accueil_reservation {
   background-color: #F6F6F6;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 50px;
 }
-.header_reservation h1 {
+.header_accueil_reservation h1 {
   margin: 30px 50px 15px 50px;
   text-align: center;
 }
-.header_reservation p {
+.header_accueil_reservation p {
   text-align: center;
   color: #4D4D4D;
   margin: 0px 15px 30px 15px;
   font-size: 17px;
   font-weight: 300;
 }
-.header_reservation a {
+.header_accueil_reservation a {
   text-decoration: none;
 }
 
 .fa-location-dot {
   padding-right: 15px;
+}
+
+/********* Header des menus ********/
+.header_menu_logo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 27px;
+  padding: 20px 0 12px 0;
+}
+.header_menu_logo a {
+  text-decoration: none;
+  color: black;
+}
+.header_menu_photo {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.fa-arrow-left {
+  font-size: 20px;
+  position: absolute;
+  left: 20px;
+  top: 22px;
 }
 
 /********** Espace "fonctionnement" sur la page d'accueil ********/
@@ -244,7 +269,6 @@ h2 {
   top: 0px;
   transform: scale(0);
   transform-origin: bottom;
-  font-weight: bold;
 }
 
 @keyframes heart {
@@ -264,15 +288,81 @@ h2 {
     transform: scale(1.1);
   }
 }
+/******** Les menus des restaurants ********/
+.main_menu {
+  border-radius: 35px 35px 0 0;
+  background-color: #F6F6F6;
+  position: relative;
+  top: -40px;
+}
+
+.titre_restaurant {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  padding-top: 23px;
+}
+.titre_restaurant h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 300;
+  padding: 0px 25px 0px 0px;
+  margin: 0;
+}
+
+.heart-titre {
+  position: relative;
+  font-size: 25px;
+}
+
+.underline {
+  background: #99E2D0;
+  width: 43px;
+  height: 3px;
+  margin-left: 8px;
+}
+
+.menu {
+  padding: 0 20px;
+}
+.menu_titre {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 25px 0 5px 8px;
+}
+.menu_description {
+  background: #FFFFFF;
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding-left: 13px;
+  box-shadow: 0px 4px 18px 0px #c1c0c0;
+}
+.menu_description h4 {
+  margin: 12px 0 5px 0;
+}
+.menu_description p {
+  margin: 0 0 12px 0;
+  font-size: 13px;
+}
+.menu_description_prix {
+  margin: 0 20px 12px 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
 /** Footer **/
 footer {
   background-color: #353535;
 }
 footer h3 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 300;
   color: #FFFFFF;
-  font-family: "Shrikhand", serif;
   font-size: 20px;
-  font-weight: 100;
   padding: 20px 10px 15px 25px;
   margin: 0;
 }
@@ -315,7 +405,7 @@ footer li {
 }
 .main_button:hover {
   background: linear-gradient(345deg, #9b63df, #ff88de);
-  box-shadow: 3px 8px 8px 2px #c1c0c0;
+  box-shadow: 3px 8px 7px 0px #c1c0c0;
 }
 
 /*# sourceMappingURL=style.css.map */

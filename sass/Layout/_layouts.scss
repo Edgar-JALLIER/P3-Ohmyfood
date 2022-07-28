@@ -1,6 +1,6 @@
 /*** Header de la page d'accueil ***/
 
-.header {
+.header_accueil {
 
     &_logo {
         height: 27px;
@@ -48,6 +48,35 @@
 .fa-location-dot {
     padding-right: 15px;
 }
+
+/********* Header des menus ********/
+
+.header_menu {
+    &_logo {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 27px;
+        padding: 20px 0 12px 0;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+    &_photo {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.fa-arrow-left {
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    top: 22px;
+}
+
 
 /********** Espace "fonctionnement" sur la page d'accueil ********/
 
@@ -231,7 +260,6 @@
     top: 0px;
     transform: scale(0); 
     transform-origin: bottom;
-    font-weight: bold;
 }
 
 @keyframes heart {
@@ -252,15 +280,76 @@
     }
   }
 
+/******** Les menus des restaurants ********/
+.main_menu {
+    border-radius: 35px 35px 0 0;
+    background-color: #F6F6F6;
+    position: relative;
+    top: -40px;
+    
+}
+.titre_restaurant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding-top: 23px;
+    h1 {
+        @include font_titre;
+        padding: 0px 25px 0px 0px;
+        margin: 0;
+    }
+}
+.heart-titre {
+    position: relative;
+    font-size: 25px;
+}
+
+.underline {
+    background: #99E2D0;
+    width: 43px;
+    height: 3px;
+    margin-left: 8px;
+}
+.menu {
+    padding: 0 20px;
+    &_titre {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 16px;
+        margin: 25px 0 5px 8px;
+    }
+    &_description {
+        background: #FFFFFF;
+        border-radius: 15px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-top: 12px;
+        padding-left: 13px;
+        box-shadow: 0px 4px 18px 0px #c1c0c0;
+        h4 {
+            margin: 12px 0 5px 0;
+        }
+        p {
+            margin: 0 0 12px 0;
+            font-size: 13px;
+        }
+        &_prix {
+            margin: 0 20px 12px 0;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    }
+}
 /** Footer **/
 
 footer {
     background-color:#353535;
     h3 {
+        @include font_titre;
         color: #FFFFFF;
-        font-family: 'Shrikhand', serif;
         font-size: 20px;
-        font-weight: 100;
         padding: 20px 10px 15px 25px;
         margin: 0;
         @include tablette {
