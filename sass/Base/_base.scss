@@ -8,7 +8,7 @@ $font_titre: 'Shrikhand';
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
 
-$breakpoints : (tablette: 600px, desktop: 980px);
+$breakpoints : (tablette: 600px, desktop: 980px, desktop-xl: 1450px) ;
 
 @mixin font_titre {
     font-family: $font_titre, sans-serif;
@@ -28,7 +28,7 @@ $breakpoints : (tablette: 600px, desktop: 980px);
 }
 
 body {
-    margin: 0px;
+    margin: auto;
     font-family: $font_site, serif;
 }
 

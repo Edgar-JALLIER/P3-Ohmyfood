@@ -170,11 +170,20 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 30px;
-    @include desktop {
+    @include tablette {
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-        flex-wrap: wrap;
+        max-width: 880px;
+        margin: auto;
     }
+    @include desktop {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        max-width: none;
+    }
+    
     a {
         text-decoration: none;
         color: black;
@@ -182,8 +191,12 @@
         width: 90%;
         margin-bottom: 20px;
         border-radius: 15px;
+        @include tablette {
+            max-width: 260px;
+            margin: 20px;
+        }
         @include desktop {
-            width: 680px;
+            max-width: 375px;
             margin: 20px;
         }
 
@@ -285,8 +298,7 @@
     border-radius: 35px 35px 0 0;
     background-color: #F6F6F6;
     position: relative;
-    margin-top: -40px;
-    
+    margin-top: -40px;   
 }
 .titre_restaurant {
     display: flex;
@@ -319,6 +331,17 @@
 
 .menu {
     padding: 0 20px 10px 20px;
+    @include desktop {
+        width: 100%;
+        max-width: 450px;
+    }
+    &_positionnement {
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
     &_titre {
         text-transform: uppercase;
         font-weight: 400;
@@ -401,6 +424,7 @@
 .menu3 {
     animation: start-menu 1.5s 0.9s both;
 }
+
 @keyframes start-menu {
     0% {
       opacity: 0;
@@ -432,6 +456,7 @@ footer {
         margin: 0;
         @include tablette {
             text-align: center;
+            font-size: 26px;
         }
     }
     ul {
