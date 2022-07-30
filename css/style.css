@@ -47,9 +47,6 @@ h2 {
   font-size: 17px;
   font-weight: 300;
 }
-.header_accueil_reservation a {
-  text-decoration: none;
-}
 
 .fa-location-dot {
   padding-right: 15px;
@@ -91,7 +88,7 @@ h2 {
 }
 
 .functioning {
-  margin: 15px 15px 40px 15px;
+  margin: 15px 8px 40px 8px;
   display: flex;
   flex-direction: column;
 }
@@ -205,6 +202,11 @@ h2 {
   margin-bottom: 20px;
   border-radius: 15px;
 }
+.restaurants a:hover {
+  box-shadow: 0px 6px 14px 6px #b7b6b6;
+  transition: 0.25s;
+  transform: scale(1.02);
+}
 @media screen and (min-width: 600px) {
   .restaurants a {
     max-width: 260px;
@@ -277,7 +279,6 @@ h2 {
 
 .heart-full {
   background: linear-gradient(220deg, #9356DC, #FF79DA);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   position: absolute;
@@ -405,7 +406,7 @@ h2 {
 }
 .menu_description p {
   margin: 0 0 12px 0;
-  font-size: 12px;
+  font-size: 13px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -428,14 +429,18 @@ h2 {
 }
 
 .menu1 {
-  animation: start-menu 1.5s 0.5s both;
+  animation: start-menu 1.5s 0.3s both;
 }
 
 .menu2 {
-  animation: start-menu 1.5s 0.7s both;
+  animation: start-menu 1.5s 0.5s both;
 }
 
 .menu3 {
+  animation: start-menu 1.5s 0.7s both;
+}
+
+.menu4 {
   animation: start-menu 1.5s 0.9s both;
 }
 
