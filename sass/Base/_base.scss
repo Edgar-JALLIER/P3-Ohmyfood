@@ -1,12 +1,12 @@
 /********* Défini la structure globale ********/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+
 $primaire: #9356DC;
 $secondaire: #FF79DA;
 $tertiaire: #99E2D0;
 $font_site: 'Roboto';
 $font_titre: 'Shrikhand';
 
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
 
 $breakpoints : (tablette: 600px, desktop: 980px, desktop-xl: 1450px) ;
 

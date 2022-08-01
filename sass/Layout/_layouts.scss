@@ -1,3 +1,67 @@
+/*** Loader ***/
+.loader-page {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: time 2.5s both;
+    
+    p {
+        @include font_titre;
+        font-size: 35px;
+        margin-top: 0px;
+        padding: 10px;
+        position: relative;
+        top: -125px;
+        background: linear-gradient(220deg,  $primaire, $secondaire);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}  
+
+.loader {
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    position: relative;
+    top: 55px;
+    background: linear-gradient(0deg, $primaire 20%, $secondaire 100%);
+    animation: rotation 1.3s linear 2;
+  }
+  .loader::after {
+    content: '';  
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 270px;
+    height: 300px;
+    border-radius: 50%;
+    background: #ffffff;
+  }
+
+@keyframes rotation {
+    0% { 
+        transform: rotate(0deg) 
+    }
+    100% { 
+        transform: rotate(360deg)
+    }
+} 
+
+@keyframes time {
+    0% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
 /*** Header de la page d'accueil ***/
 
 .header_accueil {
@@ -6,7 +70,8 @@
         height: 27px;
         display: flex;
         justify-content: center;
-        margin: 20px auto 20px auto;  
+        margin: 0px auto 0px auto; 
+        padding: 20px 0; 
     
     }
     &_location {
@@ -24,6 +89,9 @@
         flex-direction: column;
         align-items: center;
         padding-bottom: 50px;
+        @include desktop {
+            padding-bottom: 35px;
+        }
 
         h1 {
             margin: 30px 50px 15px 50px;
@@ -33,7 +101,7 @@
         p {
             text-align: center;
             color: #4D4D4D;
-            margin: 0px 15px 30px 15px;
+            margin: 0px 15px 25px 15px;
             font-size: 17px;
             font-weight: 300;
         }
@@ -80,6 +148,7 @@
     margin: 45px 10px 0px 20px;
     @include desktop {
         text-align: center;
+        margin: 20px 0 0 0;
     }
 }
 .functioning {
@@ -89,6 +158,8 @@
     @include desktop {
         flex-direction: row;
         justify-content: center;
+        margin-top: 5px;
+        margin-bottom: 20px;
     }
     &_number {
         position: relative;
@@ -158,6 +229,8 @@
     margin-top: 0px;
     @include desktop {
         text-align: center;
+        padding: 25px 0 0 0;
+        margin-bottom: 10px;
     }
 }
 
@@ -456,7 +529,7 @@ footer {
         @include font_titre;
         color: #FFFFFF;
         font-size: 20px;
-        padding: 20px 10px 15px 25px;
+        padding: 20px 25px 15px 25px;
         margin: 0;
         @include tablette {
             text-align: center;
@@ -465,7 +538,7 @@ footer {
     }
     ul {
         list-style-type: none;
-        padding: 0 0 25px 25px;
+        padding: 0 25px 25px 25px;
         margin: 0;
         @include tablette {
             text-align: center;
