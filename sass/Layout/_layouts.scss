@@ -93,8 +93,8 @@
             padding-bottom: 35px;
         }
 
-        h1 {
-            margin: 30px 50px 15px 50px;
+        h2 {
+            margin: 25px 50px 15px 50px;
             text-align: center;
         }
 
@@ -201,25 +201,14 @@
 
 }
 
-.fa-mobile-screen {
+.fa-mobile-screen, .fa-list-ul, .fa-store {
     padding: 0px 25px 0px 10px;
     font-size: 20px;
-    color: #7E7E7E;
-}
-
-.fa-list-ul {
-    padding: 0px 25px 0px 10px;
-    font-size: 20px;
-    color: #7E7E7E;
-}
-
-.fa-store {
-    padding: 0px 25px 0px 10px;
-    font-size: 18px;
     color: #7E7E7E;
 }
 
 /**** Espace Restaurants ****/
+
 #sectionRestaurants {
     background-color: #F6F6F6;
 }
@@ -239,14 +228,12 @@
     flex-direction: column;
     align-items: center;
     @include tablette {
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        max-width: 880px;
-        margin: auto;
-        padding-bottom: 25px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
     }
     @include desktop {
+        display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
         justify-content: center;
@@ -267,12 +254,10 @@
             transform: scale(1.02);
         }
         @include tablette {
-            max-width: 260px;
             margin: 20px;
         }
         @include desktop {
             max-width: 375px;
-            margin: 20px;
         }
 
     }
@@ -378,8 +363,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
-    padding-top: 23px;
+    font-size: 13px;
+    padding: 23px 10px 0 10px;
     h1 {
         @include font_titre;
         padding: 0px 25px 0px 0px;
@@ -419,7 +404,7 @@
     &_titre {
         text-transform: uppercase;
         font-weight: 400;
-        font-size: 13px;
+        font-size: 14px;
         margin: 25px 0 5px 8px;
     }
     &_description {
@@ -438,7 +423,7 @@
         overflow: hidden;
 
         &:hover .menu_description_checkbox {
-            transform: translateX(0%);      
+            transform: translateX(0px);      
         }
         &:hover .menu_description_prix {
             transform: translateX(-50px);        

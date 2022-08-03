@@ -8,7 +8,7 @@ $font_site: 'Roboto';
 $font_titre: 'Shrikhand';
 
 
-$breakpoints : (tablette: 600px, desktop: 980px, desktop-xl: 1450px) ;
+$breakpoints : (tablette: 600px, desktop: 980px) ;
 
 @mixin font_titre {
     font-family: $font_titre, sans-serif;
@@ -32,11 +32,4 @@ body {
     font-family: $font_site, serif;
 }
 
-h1 {
-    font-size: 24px;
-}
-
-h2 {
-    font-family: $font_site, serif;
-}
 

@@ -6,14 +6,6 @@ body {
   font-family: "Roboto", serif;
 }
 
-h1 {
-  font-size: 24px;
-}
-
-h2 {
-  font-family: "Roboto", serif;
-}
-
 /*** Loader ***/
 .loader-page {
   background-color: #ffffff;
@@ -106,8 +98,8 @@ h2 {
     padding-bottom: 35px;
   }
 }
-.header_accueil_reservation h1 {
-  margin: 30px 50px 15px 50px;
+.header_accueil_reservation h2 {
+  margin: 25px 50px 15px 50px;
   text-align: center;
 }
 .header_accueil_reservation p {
@@ -211,21 +203,9 @@ h2 {
   color: #9356DC;
 }
 
-.fa-mobile-screen {
+.fa-mobile-screen, .fa-list-ul, .fa-store {
   padding: 0px 25px 0px 10px;
   font-size: 20px;
-  color: #7E7E7E;
-}
-
-.fa-list-ul {
-  padding: 0px 25px 0px 10px;
-  font-size: 20px;
-  color: #7E7E7E;
-}
-
-.fa-store {
-  padding: 0px 25px 0px 10px;
-  font-size: 18px;
   color: #7E7E7E;
 }
 
@@ -253,16 +233,14 @@ h2 {
 }
 @media screen and (min-width: 600px) {
   .restaurants {
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    max-width: 880px;
-    margin: auto;
-    padding-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
   }
 }
 @media screen and (min-width: 980px) {
   .restaurants {
+    display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
@@ -285,14 +263,12 @@ h2 {
 }
 @media screen and (min-width: 600px) {
   .restaurants a {
-    max-width: 260px;
     margin: 20px;
   }
 }
 @media screen and (min-width: 980px) {
   .restaurants a {
     max-width: 375px;
-    margin: 20px;
   }
 }
 .restaurants_card {
@@ -393,8 +369,8 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 25px;
-  padding-top: 23px;
+  font-size: 13px;
+  padding: 23px 10px 0 10px;
 }
 .titre_restaurant h1 {
   font-family: "Shrikhand", sans-serif;
@@ -439,7 +415,7 @@ h2 {
 .menu_titre {
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   margin: 25px 0 5px 8px;
 }
 .menu_description {
@@ -458,7 +434,7 @@ h2 {
   overflow: hidden;
 }
 .menu_description:hover .menu_description_checkbox {
-  transform: translateX(0%);
+  transform: translateX(0px);
 }
 .menu_description:hover .menu_description_prix {
   transform: translateX(-50px);
