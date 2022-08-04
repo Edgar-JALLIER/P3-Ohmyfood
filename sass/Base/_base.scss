@@ -7,8 +7,7 @@ $tertiaire: #99E2D0;
 $font_site: 'Roboto';
 $font_titre: 'Shrikhand';
 
-
-$breakpoints : (tablette: 600px, desktop: 980px) ;
+$breakpoints : (tablette: 600px, desktop: 980px);
 
 @mixin font_titre {
     font-family: $font_titre, sans-serif;
