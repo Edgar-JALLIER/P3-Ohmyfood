@@ -145,10 +145,11 @@
 /********** Espace "fonctionnement" sur la page d'accueil ********/
 
 #titreFonctionnement {
-    margin: 45px 10px 0px 20px;
+    padding: 45px 10px 0px 20px;
+    margin: 0;
     @include desktop {
         text-align: center;
-        margin: 20px 0 0 0;
+        padding: 20px 0 0 0;
     }
 }
 .functioning {
@@ -319,8 +320,7 @@
     transition: 0.3s;
 }
 .fa-heart:hover .heart-full{
-    transform: scale(1.10);
-    animation: heart 0.7s;
+    animation: heart 0.7s forwards;
  }
 
 .heart-full {

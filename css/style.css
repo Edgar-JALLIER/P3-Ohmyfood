@@ -141,12 +141,13 @@ body {
 
 /********** Espace "fonctionnement" sur la page d'accueil ********/
 #titreFonctionnement {
-  margin: 45px 10px 0px 20px;
+  padding: 45px 10px 0px 20px;
+  margin: 0;
 }
 @media screen and (min-width: 980px) {
   #titreFonctionnement {
     text-align: center;
-    margin: 20px 0 0 0;
+    padding: 20px 0 0 0;
   }
 }
 
@@ -325,8 +326,7 @@ body {
 }
 
 .fa-heart:hover .heart-full {
-  transform: scale(1.1);
-  animation: heart 0.7s;
+  animation: heart 0.7s forwards;
 }
 
 .heart-full {
